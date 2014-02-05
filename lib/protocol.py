@@ -28,7 +28,3 @@ def init(transport):
 
     # subscribe to the session key of the game
     transport.subscribe(session_key['session_key'])
-
-    # todo remove this
-    data={'x':10,'y':20,'gold':300}
-    transport.send(data,action=actions.event,shared=True,session=True,server_shared=True)

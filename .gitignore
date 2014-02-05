@@ -2,5 +2,6 @@
 *~
 *.log
 *.pyc
+lib/*.pyc
 .idea
 data.db

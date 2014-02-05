@@ -79,6 +79,9 @@ class Transport():
                     socket.send(data)
                     self.data_push.remove(data)
 
+                    # to decrease CPU usage
+                    time.sleep(0.001)
+
             except:
                 traceback.print_exc()
 
@@ -96,5 +99,8 @@ class Transport():
                 data = " ".join(data.split(" ")[1:])
                 print logging.debug(data, "[SUBSCRIBE]")
                 self.data_sub.append(json.loads(data))
+
+                # to decrease CPU usage
+                time.sleep(0.001)
             except:
                 traceback.print_exc()
