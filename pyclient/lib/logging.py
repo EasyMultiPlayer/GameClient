@@ -1,4 +1,4 @@
-import config
+from pyclient import config
 import time
 
 
@@ -9,7 +9,7 @@ def getCurrentTime():
 def debug(message, key=""):
     return getCurrentTime() + ":" + key + ":" + message
 
-
+# TODO add these tags
 def error(message):
     errorLog = open(config.ERROR_LOG, "a")
     errorLog.write("\n" + debug(message, "[ERROR]"))
