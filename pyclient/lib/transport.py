@@ -1,11 +1,11 @@
 import zmq
 import json
 import traceback
-from pyclient import config
+import config
 import time
 import threading
-from pyclient.lib import logging
-from pyclient.res import actions
+from lib import logging
+from res import actions
 
 
 class Transport():

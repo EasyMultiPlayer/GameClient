@@ -1,4 +1,4 @@
-from pyclient import config
+import config
 import time
 
 

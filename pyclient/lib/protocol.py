@@ -1,6 +1,6 @@
-from pyclient import config
+import config
 import user_layer
-from pyclient.res import actions
+from res import actions
 
 # step 1
 def init(transport):
